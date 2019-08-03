@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditionals</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+        
+        <link rel="stylesheet" href="styles.css">
+
+        <div id="vue-app">
+            <h1>Conditionals</h1>
+            <button v-on:click="error=!error">Toggle error</button>
+            <button v-on:click="success=!success">Toggle success</button>
+            <p v-show="error"> Oops sorry! There's a error!</p>
+            <p v-show="success">It's a success! Yay!</p>
+
+
+        </div>
+        <script src="vue.js"></script>
+    
+</body>
+</html>
